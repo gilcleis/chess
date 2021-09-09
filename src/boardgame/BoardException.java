@@ -8,8 +8,5 @@ public class BoardException extends RuntimeException{
 		super(message);
 	}
 	
-	
-	
-	
 
 }
