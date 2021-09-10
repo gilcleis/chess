@@ -94,7 +94,10 @@ public class UI {
 		printcapturedPieces(captured);
 		System.out.println();
 		System.out.println("Turn: " + chessMatch.getTurn());
-		System.out.println("Whaiting Player: "+chessMatch.getCurrentPlayer());		
+		System.out.println("Whaiting Player: "+chessMatch.getCurrentPlayer());	
+		if(chessMatch.isCheck()) {
+			System.out.println("CHECK!");
+		}
 	}
 	
 	private static void printcapturedPieces(List<ChessPiece> captured) {
