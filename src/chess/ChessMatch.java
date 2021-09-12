@@ -99,8 +99,6 @@ public class ChessMatch {
 			}
 		}
 
-		ChessPiece movedPiece = (ChessPiece) board.piece(target);
-
 		check = (testCheck(opponent(currentPlayer))) ? true : false;
 		if (testCheckMate(opponent(currentPlayer))) {
 			checkMate = true;
